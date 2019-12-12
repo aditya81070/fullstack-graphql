@@ -15,10 +15,16 @@ const typeDefs = gql`
     name: String!
     type: String!
   }
+  # this is input type
+  input petInput {
+    name: String
+    type: String!
+  }
 
   type Query {
     user: User
     pets: [Pet]!
+    pet(input: petInput): [Pet]!
   }
 `
 
