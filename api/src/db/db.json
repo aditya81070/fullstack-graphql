@@ -7,25 +7,25 @@
     {
       "name": "cheesecake",
       "id": 1,
-      "type": "golden",
+      "type": "DOG",
       "createdAt": 5252525
     },
     {
       "name": "cheese",
       "id": 2,
-      "type": "brown",
+      "type": "CAT",
       "createdAt": 52515451
     },
     {
       "name": "cheesebook",
       "id": 3,
-      "type": "white",
+      "type": "DOG",
       "createdAt": 5151515
     },
     {
       "name": "lora",
       "id": 4,
-      "type": "golden",
+      "type": "CAT",
       "createdAt": 5223525
     }
   ]
