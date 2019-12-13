@@ -11,6 +11,9 @@ module.exports = {
     pet(_, { input }, { models }) {
       return models.Pet.findOne(input)
     },
+    user(_, __, ctx) {
+      return ctx.user
+    },
   },
   Mutation: {
     createPet(_, { input }, ctx) {
@@ -25,5 +28,14 @@ module.exports = {
         : 'http://placekitten.com/300/300'
     },
   },
-  // User: {},
+  User: {
+    pets(user, _, ctx) {
+      return ctx.models.Pet.findMany({})
+    },
+  },
+  Pet: {
+    user(pet, _, ctx) {
+      return ctx.user
+    },
+  },
 }
