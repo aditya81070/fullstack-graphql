@@ -65,4 +65,4 @@ dist
 coverage
 .cache
 # vscode setting
- .vscode
+.vscode/
